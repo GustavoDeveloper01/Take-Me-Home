@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;   
+    background-color: #69CBB4;
+}
+.header0{
+    background-color: #69CBB4;
+    height: 200px;
+    width: 100%;
+}
+ul li {
+    list-style: none;
+    display: flexbox;
+}
+li h3{
+    margin-left: 150px;
+    margin-top: 80px;
+    width: 300;
+    font-family: 'Dancing Script';font-size: 115px;
+    color: #F08243;
+    
+}
+ul li img{
+    margin-top: -200px;
+   margin-left: 1150px;
+   
+}
+/* stilo do header */
+header{
+    height: 70px;
+    width: auto;
+    background-color: black;
+    
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    letter-spacing: 5px;
+}
+header li {
+    padding: 25px;
+}
+header li:hover{
+    border-radius: 25px;
+    background-color: white;
+    transition: 0.8s;
+    opacity: 0.9;
+    transform: scale(1);
+}
+header ul li a{
+    text-decoration: none;
+}
+header ul li a p:hover{
+    transform: scale(1.2);
+}
+header p{
+    font-family: 'Montserrat', sans-serif;   
+    color: #F08243;
+    font-size: 20px;
+}
+/*estilo galeria */
+.gallery-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+.gallery-items{
+    width: 315x;
+    height: 315px;
+}
+.gallery-items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px;
+    color: black;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+.gallery-items img:hover{
+    transform: scale(1.2);
+    transition: 0.9;
+}
+/*estilo footer */
+footer{
+    width: 100%;
+    height: 250px;
+    opacity: 0.9;
+    background-color: #69CBB4;
+    margin-top: 40px;
+}
+.rodape h2{
+    font-family: 'Montserrat', sans-serif; 
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    
+}
+#redes{
+    display:flex;
+    text-align: center;
+}
+
+.facebookbtn{
+     border: none;
+     background: transparent;
+     margin-left: 400px;
+}
+.facebookbtn svg:hover{
+    transform: scale(1.5);
+}
+.facebookbtn:hover{
+    color: blue;
+    transform: rotate(360deg);
+    transition: 0.9s;
+    padding-left:5px;
+}
+li a{
+    text-decoration: none;
+    color: grey;
+}
+.instagrambtn{
+    border: none;
+    background: transparent;
+    margin-left: 110px;
+}
+.instagrambtn svg:hover{
+    transform: scale(1.5);
+    
+}
+.instagrambtn:hover{
+    color: #dd2a7b;
+    transform: rotate(360deg);
+    transition: 0.9s;
+    padding-left: 5px;
+}
+.zapbtn{
+    border: none;
+    background: transparent;
+    margin-left: 90px;
+}
+.zapbtn svg:hover{
+    transform: scale(1.5);
+}
+.zapbtn:hover{
+    color: green;
+    transform: rotate(360deg);
+    transition: 0.9s;
+    padding-left: 25px;
+}
+/*estilo contato */
+form{
+    margin: 40px 0;
+    margin-left: 25px;
+}
+form label,form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.check{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-left: 35px;
+}
+.enviar:hover{
+    background-color: darkorange;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+table{
+    margin: 20px 0 40px;
+    margin-left: 25px;
+}
+thead{
+    background-color: #555555;
+    color:white;
+    font-weight: bolder;
+}
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+.contato-page{
+    background-color: white;
+    margin-top: -40px;
+}
+/* estilo loja */
+.loja{
+    width: 100%;
+    background: white;
+    height: 600px;
+}
+.loja p{
+    font-size: 35px;
+    margin-left: 625px;
+ 
+}
+.endereco{
+    font-size: 25px;
+    margin-left: 350px;
+    margin-top: 15px;
+}
+.mapa{
+    margin-top: 35px;
+    margin-left: 500px;
+}
+.autoria p{
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+@media screen and (max-width: 414px) { 
+    .header0{
+        width: 100%;
+        height: 90px; 
+    }
+    li h3{
+       font-size: 25px;
+       width: 5px;
+       display: inline;
+       margin-left: 25px;
+       position: absolute;
+       margin-top: 15px;
+    }
+    .header0 li img{
+        height: 80px;
+        width: 110px;
+        margin-left: 300px ;
+        margin-top: -10px;
+    }
+   .facebookbtn{
+    margin-left: 15px;
+    display: flex;
+    }
+   .autoria p{
+    display: inline;
+    font-size: 15px;
+    margin-left: 15px;
+    padding-top: 30px;
+    }
+   .enviar{
+    width: 180px;
+    }
+   .titulo-principal p{
+    margin-left: 110px;
+     }
+  .endereco{
+    font-size: 15px;
+    margin-left: 90px;
+    }
+  .mapa iframe{
+    width: 250px;
+    height: 250px;
+    margin-left: -425px;
+     }
+}
